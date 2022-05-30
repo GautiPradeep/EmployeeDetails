@@ -30,7 +30,7 @@ namespace EmployeeDetails.Common
 
         public async Task InitiateConnection()
         {
-            // Create a new instance of the Cosmos Client 
+            
             //configuring Azure Cosmosdb sql api details
             this.cosmosClient = new CosmosClient(EndpointUri, PrimaryKey);
             await CreateDatabaseAsync();
